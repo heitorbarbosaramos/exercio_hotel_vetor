@@ -36,14 +36,13 @@ public class Principal {
 			sc.nextLine();
 			System.out.print("Nome hospede: ");
 			String name = sc.nextLine().trim().toUpperCase();
-			
+			System.out.print("Quantidade de Dias: ");
+			Integer quantDias = sc.nextInt();			
 
 			do {
 				y = 0;
 				System.out.print("Numero Quarto: ");
 				numQuarto = sc.nextInt();
-				System.out.print("Quantidade de Dias: ");
-				Integer quantDias = sc.nextInt();
 				
 				if (numQuarto < quartos.getQuantQuartos()) {
 					if (quartos.vect[numQuarto] == null) {
